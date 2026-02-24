@@ -9,7 +9,6 @@ interface AnimatedCountProps {
 }
 
 // Animate integer from 0 → target with comma formatting
-// When `replay` toggles to true, resets and re-animates
 export default function AnimatedCount({ value, duration = 1700, replay }: AnimatedCountProps) {
   const [display, setDisplay] = useState(0);
   const rafRef = useRef<number | null>(null);
